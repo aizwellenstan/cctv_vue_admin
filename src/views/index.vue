@@ -1,5 +1,5 @@
 <template>
-  <div onload="loadScript()">
+  <div>
     <header class="header-section">
       <div class="container">
         <!-- logo -->
@@ -16,8 +16,8 @@
         <!-- site menu -->
         <nav class="main-menu">
           <ul>
-            <li><a href="#">Basic Module</a></li>
-            <li><a href="#">Subsystem</a></li>
+            <li><a href="#basicModule">Basic Module</a></li>
+            <li><a href="#subsystem">Subsystem</a></li>
 
           </ul>
         </nav>
@@ -109,7 +109,7 @@
       </div>
     </section>
 
-    <section class="review-section spad set-bg">
+    <section id="basicModule" class="review-section spad set-bg">
       <div class="container">
         <div class="section-title">
           <!--<div class="cata new">new</div>-->
@@ -228,7 +228,7 @@
       </div>
     </section>
 
-    <section class="tournaments-section spad">
+    <section id="subsystem" class="tournaments-section spad">
       <div class="container">
         <div class="section-title">
           <!--<div class="cata new"></div>-->
@@ -317,8 +317,8 @@
     <footer class="footer-section">
       <div class="container">
         <ul class="footer-menu">
-          <li><a href="#">Basic Module</a></li>
-          <li><a href="#">Subsystem</a></li>
+          <li><a href="#basicModule">Basic Module</a></li>
+          <li><a href="#subsystem">Subsystem</a></li>
         </ul>
         <p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
           Copyright &copy;<span>{{ timestamp }}</span> NADI Technologies
@@ -382,6 +382,7 @@ export default {
   },
   created() {
     setInterval(this.getNow, 1000)
+    this.loadScript
   },
   methods: {
     loadScript: function() {
