@@ -314,6 +314,18 @@
       </div>
     </section>
 
+    <footer class="footer-section">
+      <div class="container">
+        <ul class="footer-menu">
+          <li><a href="#">Basic Module</a></li>
+          <li><a href="#">Subsystem</a></li>
+        </ul>
+        <p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          Copyright &copy;<span>{{ timestamp }}</span> NADI Technologies
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </p>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -327,6 +339,11 @@ var loadScript = function() {
 }
 
 export default {
+  data() {
+    return {
+      timestamp: ''
+    }
+  },
   metaInfo() {
     return {
       link: [
@@ -363,6 +380,9 @@ export default {
       loadScript()
     })
   },
+  created() {
+    setInterval(this.getNow, 1000)
+  },
   methods: {
     loadScript: function() {
       document.write(unescape("%3Cscript src='../assets/js/jquery-3.2.1.min.js' type='text/javascript'%3E%3C/script%3E")) // Load the Local file (if google is down for some reason)
@@ -370,6 +390,11 @@ export default {
       document.write(unescape("%3Cscript src='../assets/js/owl.carousel.min.js' type='text/javascript'%3E%3C/script%3E"))
       document.write(unescape("%3Cscript src='../assets/js/jquery.marquee.min.js' type='text/javascript'%3E%3C/script%3E"))
       document.write(unescape("%3Cscript src='../assets/js/main.js' type='text/javascript'%3E%3C/script%3E"))
+    },
+    getNow: function() {
+      const today = new Date()
+      const date = today.getFullYear()
+      this.timestamp = date
     }
   }
 }
