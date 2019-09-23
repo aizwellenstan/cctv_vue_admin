@@ -37,6 +37,9 @@ import 'videojs-contrib-hls'
 
 Vue.use(VideoPlayer)
 
+import VueMeta from 'vue-meta'
+
+Vue.use(VueMeta)
 // import VideoPlayer from 'vue-video-player'
 // import 'video.js/dist/video-js.css'
 // import 'vue-video-player/src/custom-theme.css'

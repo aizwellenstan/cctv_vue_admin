@@ -25,7 +25,7 @@
     </header>
     <section class="hero-section">
       <div class="hero-slider owl-carousel">
-        <div class="hs-item set-bg" data-setbg="../assets/img/slider-1.jpg">
+        <div class="hs-item set-bg" data-setbg="../../assets/img/slider-1.jpg">
           <div class="hs-text">
             <div class="container">
               <h2>The More Sensors,<br>The Less Efficient Paradox</h2><!--<span>Games</span>-->
@@ -37,7 +37,7 @@
           </div>
         </div>
 
-        <div class="hs-item set-bg" data-setbg="../assets/img/slider-2.jpg">
+        <div class="hs-item set-bg" data-setbg="../../assets/img/slider-2.jpg">
           <div class="hs-text">
             <div class="container">
               <h2>The more sensors,<br>the less efficient paradox</h2><!--<span>Games</span>-->
@@ -66,7 +66,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 p-0">
-            <div class="feature-item set-bg" data-setbg="../assets/img/features/1.jpg">
+            <div class="feature-item set-bg" data-setbg="../../assets/img/features/1.jpg">
               <span class="cata yellow">simply</span>
               <div class="fi-content text-white">
                 <h5><a href="#">Everything in ONE PLATFORM</a></h5>
@@ -76,7 +76,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6 p-0">
-            <div class="feature-item set-bg" data-setbg="../assets/img/features/2.jpg">
+            <div class="feature-item set-bg" data-setbg="../../assets/img/features/2.jpg">
               <span class="cata pink">best</span>
               <div class="fi-content text-white">
                 <h5><a href="#">3D Visualization </a></h5>
@@ -86,7 +86,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6 p-0">
-            <div class="feature-item set-bg" data-setbg="../assets/img/features/3.jpg">
+            <div class="feature-item set-bg" data-setbg="../../assets/img/features/3.jpg">
               <span class="cata purple">awesome</span>
               <div class="fi-content text-white">
                 <h5><a href="#">3D Visualization  of Data </a></h5>
@@ -96,7 +96,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6 p-0">
-            <div class="feature-item set-bg" data-setbg="../assets/img/features/4.jpg">
+            <div class="feature-item set-bg" data-setbg="../../assets/img/features/4.jpg">
               <span class="cata green">easy</span>
               <div class="fi-content text-white">
                 <h5><a href="#">Management Platform with Visualization  </a></h5>
@@ -119,8 +119,8 @@
           <div class="col-lg-3 col-md-6">
             <a href="#">
               <div class="review-item">
-                <div class="review-cover set-bg" data-setbg="../assets/img/review/img_2-1.png">
-                  <div class="score yellow"><img src="../assets/img/icons/icon_stars.png" alt=""></div>
+                <div class="review-cover set-bg" data-setbg="../../assets/img/review/img_2-1.png">
+                  <div class="score yellow"><img src="../../assets/img/icons/icon_stars.png" alt=""></div>
                 </div>
                 <div class="review-text">
                   <h5>Time Bar</h5>
@@ -132,8 +132,8 @@
           <div class="col-lg-3 col-md-6">
             <a href="#">
               <div class="review-item">
-                <div class="review-cover set-bg" data-setbg="../assets/img/review/img_2-2.png">
-                  <div class="score yellow"><img src="../assets/img/icons/icon_stars.png" alt=""></div>
+                <div class="review-cover set-bg" data-setbg="../../assets/img/review/img_2-2.png">
+                  <div class="score yellow"><img src="../../assets/img/icons/icon_stars.png" alt=""></div>
                 </div>
                 <div class="review-text">
                   <h5>Report</h5>
@@ -144,8 +144,8 @@
           <div class="col-lg-3 col-md-6">
             <a href="#">
               <div class="review-item">
-                <div class="review-cover set-bg" data-setbg="../assets/img/review/img_2-3.png">
-                  <div class="score yellow"><img src="../assets/img/icons/icon_stars.png" alt=""></div>
+                <div class="review-cover set-bg" data-setbg="../../assets/img/review/img_2-3.png">
+                  <div class="score yellow"><img src="../../assets/img/icons/icon_stars.png" alt=""></div>
                 </div>
                 <div class="review-text">
                   <h5>Alarm</h5>
@@ -157,8 +157,8 @@
           <div class="col-lg-3 col-md-6">
             <a href="#">
               <div class="review-item">
-                <div class="review-cover set-bg" data-setbg="../assets/img/review/img_2-4.png">
-                  <div class="score yellow"><img src="../assets/img/icons/icon_stars.png" alt=""></div>
+                <div class="review-cover set-bg" data-setbg="../../assets/img/review/img_2-4.png">
+                  <div class="score yellow"><img src="../../assets/img/icons/icon_stars.png" alt=""></div>
                 </div>
                 <div class="review-text">
                   <h5>Editor Mode</h5>
@@ -174,8 +174,8 @@
           <div class="col-lg-3 col-md-6">
             <a href="#">
               <div class="review-item">
-                <div class="review-cover set-bg" data-setbg="../assets/img/review/img_2-5.png">
-                  <div class="score yellow"><img src="../assets/img/icons/icon_stars.png" alt=""></div>
+                <div class="review-cover set-bg" data-setbg="../../assets/img/review/img_2-5.png">
+                  <div class="score yellow"><img src="../../assets/img/icons/icon_stars.png" alt=""></div>
                 </div>
                 <div class="review-text ">
                   <h5>User Management</h5>
@@ -186,8 +186,8 @@
           <div class="col-lg-3 col-md-6">
             <a href="#">
               <div class="review-item">
-                <div class="review-cover set-bg" data-setbg="../assets/img/review/img_2-6.png">
-                  <div class="score yellow"><img src="../assets/img/icons/icon_stars.png" alt=""></div>
+                <div class="review-cover set-bg" data-setbg="../../assets/img/review/img_2-6.png">
+                  <div class="score yellow"><img src="../../assets/img/icons/icon_stars.png" alt=""></div>
                 </div>
                 <div>
                   <div class="review-text">
@@ -200,8 +200,8 @@
           <div class="col-lg-3 col-md-6">
             <a href="#">
               <div class="review-item">
-                <div class="review-cover set-bg" data-setbg="../assets/img/review/img_2-7.png">
-                  <div class="score yellow"><img src="../assets/img/icons/icon_stars.png" alt=""></div>
+                <div class="review-cover set-bg" data-setbg="../../assets/img/review/img_2-7.png">
+                  <div class="score yellow"><img src="../../assets/img/icons/icon_stars.png" alt=""></div>
                 </div>
                 <div class="review-text">
                   <h5>3D Information</h5>
@@ -214,8 +214,8 @@
           <div class="col-lg-3 col-md-6">
             <a href="#">
               <div class="review-item">
-                <div class="review-cover set-bg" data-setbg="../assets/img/review/img_2-8.png">
-                  <div class="score yellow"><img src="../assets/img/icons/icon_stars.png" alt=""></div>
+                <div class="review-cover set-bg" data-setbg="../../assets/img/review/img_2-8.png">
+                  <div class="score yellow"><img src="../../assets/img/icons/icon_stars.png" alt=""></div>
                 </div>
                 <div class="review-text">
                   <h5>Monitor Mode</h5>
@@ -242,7 +242,7 @@
               <div class="cata orange">new</div>
               <a href="#">
                 <div class="ti-content">
-                  <div class="ti-thumb set-bg" data-setbg="../assets/img/tournament/1.png" />
+                  <div class="ti-thumb set-bg" data-setbg="../../assets/img/tournament/1.png" />
                   <div class="ti-text">
                     <h4>AR Glasses</h4>
                     <ul>
@@ -259,7 +259,7 @@
               <div class="cata pink">new</div>
               <a href="#">
                 <div class="ti-content">
-                  <div class="ti-thumb set-bg" data-setbg="../assets/img/tournament/2.png" />
+                  <div class="ti-thumb set-bg" data-setbg="../../assets/img/tournament/2.png" />
                   <div class="ti-text">
                     <h4>Digital Twin Operational Management</h4>
                     <ul>
@@ -281,7 +281,7 @@
               <div class="cata purple">new</div>
               <a href="#">
                 <div class="ti-content">
-                  <div class="ti-thumb set-bg" data-setbg="../assets/img/tournament/3.png" />
+                  <div class="ti-thumb set-bg" data-setbg="../../assets/img/tournament/3.png" />
                   <div class="ti-text">
                     <h4>LBS for Positioning and People Tracking</h4>
                     <ul>
@@ -298,7 +298,7 @@
               <div class="cata green">new</div>
               <a href="#">
                 <div class="ti-content">
-                  <div class="ti-thumb set-bg" data-setbg="../assets/img/tournament/4.png" />
+                  <div class="ti-thumb set-bg" data-setbg="../../assets/img/tournament/4.png" />
                   <div class="ti-text">
                     <h4>AI and Analytics for Smart Factory</h4>
                     <ul>
@@ -319,11 +319,11 @@
 
 <script>
 var loadScript = function() {
-  document.write(unescape("%3Cscript src='../assets/js/jquery-3.2.1.min.js' type='text/javascript'%3E%3C/script%3E")) // Load the Local file (if google is down for some reason)
-  document.write(unescape("%3Cscript src='../assets/js/bootstrap.min.js' type='text/javascript'%3E%3C/script%3E"))
-  document.write(unescape("%3Cscript src='../assets/js/owl.carousel.min.js' type='text/javascript'%3E%3C/script%3E"))
-  document.write(unescape("%3Cscript src='../assets/js/jquery.marquee.min.js' type='text/javascript'%3E%3C/script%3E"))
-  document.write(unescape("%3Cscript src='../assets/js/main.js' type='text/javascript'%3E%3C/script%3E"))
+  document.write(unescape("%3Cscript src='../../assets/js/jquery-3.2.1.min.js' type='text/javascript'%3E%3C/script%3E")) // Load the Local file (if google is down for some reason)
+  document.write(unescape("%3Cscript src='../../assets/js/bootstrap.min.js' type='text/javascript'%3E%3C/script%3E"))
+  document.write(unescape("%3Cscript src='../../assets/js/owl.carousel.min.js' type='text/javascript'%3E%3C/script%3E"))
+  document.write(unescape("%3Cscript src='../../assets/js/jquery.marquee.min.js' type='text/javascript'%3E%3C/script%3E"))
+  document.write(unescape("%3Cscript src='../../assets/js/main.js' type='text/javascript'%3E%3C/script%3E"))
 }
 
 export default {
@@ -333,27 +333,27 @@ export default {
         {
           once: true,
           rel: 'stylesheet',
-          href: '../assets/css/bootstrap.min.css'
+          href: '../../assets/css/bootstrap.min.css'
         },
         {
           once: true,
           rel: 'stylesheet',
-          href: '../assets/css/font-awesome.min.css'
+          href: '../../assets/css/font-awesome.min.css'
         },
         {
           once: true,
           rel: 'stylesheet',
-          href: '../assets/css/owl.carousel.css'
+          href: '../../assets/css/owl.carousel.css'
         },
         {
           once: true,
           rel: 'stylesheet',
-          href: '../assets/css/style.css'
+          href: '../../assets/css/style.css'
         },
         {
           once: true,
           rel: 'stylesheet',
-          href: '../assets/css/animate.css'
+          href: '../../assets/css/animate.css'
         }
       ]
     }
@@ -365,11 +365,11 @@ export default {
   },
   methods: {
     loadScript: function() {
-      document.write(unescape("%3Cscript src='../assets/js/jquery-3.2.1.min.js' type='text/javascript'%3E%3C/script%3E")) // Load the Local file (if google is down for some reason)
-      document.write(unescape("%3Cscript src='../assets/js/bootstrap.min.js' type='text/javascript'%3E%3C/script%3E"))
-      document.write(unescape("%3Cscript src='../assets/js/owl.carousel.min.js' type='text/javascript'%3E%3C/script%3E"))
-      document.write(unescape("%3Cscript src='../assets/js/jquery.marquee.min.js' type='text/javascript'%3E%3C/script%3E"))
-      document.write(unescape("%3Cscript src='../assets/js/main.js' type='text/javascript'%3E%3C/script%3E"))
+      document.write(unescape("%3Cscript src='../../assets/js/jquery-3.2.1.min.js' type='text/javascript'%3E%3C/script%3E")) // Load the Local file (if google is down for some reason)
+      document.write(unescape("%3Cscript src='../../assets/js/bootstrap.min.js' type='text/javascript'%3E%3C/script%3E"))
+      document.write(unescape("%3Cscript src='../../assets/js/owl.carousel.min.js' type='text/javascript'%3E%3C/script%3E"))
+      document.write(unescape("%3Cscript src='../../assets/js/jquery.marquee.min.js' type='text/javascript'%3E%3C/script%3E"))
+      document.write(unescape("%3Cscript src='../../assets/js/main.js' type='text/javascript'%3E%3C/script%3E"))
     }
   }
 }
