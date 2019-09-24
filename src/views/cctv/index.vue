@@ -7,8 +7,6 @@
 <script>
 // import Switcher from './components/Switcher'
 
-const isProduction = process.env.NODE_ENV === 'production'
-
 export default {
   components: {
     // Switcher
@@ -32,7 +30,7 @@ export default {
           {
             withCredentials: false,
             type: 'application/x-mpegURL',
-            src: 'http://192.168.1.146:8080/stream/192-168-1-200-user-admin-password-channel-2-stream-0-sdp/index.m3u8'
+            src: 'http://192.168.1.165:8080/stream/192-168-1-200-user-admin-password-channel-2-stream-0-sdp/index.m3u8'
           }
         ]
       }
