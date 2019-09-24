@@ -4,7 +4,7 @@
       <div class="container">
         <!-- logo -->
         <a class="site-logo" href="index.html">
-          <img src="img/logo.png" alt="">
+          <img src="../assets/img/home/img/logo.png" alt="">
         </a>
         <div class="user-panel">
           <a href="/login">Login</a> /  <a href="/register">Register</a>

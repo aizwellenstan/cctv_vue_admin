@@ -35,7 +35,7 @@
     </div>
     <div class="right-menu">
       <template v-if="device!=='mobile'">
-        <search id="header-search" class="right-menu-item"  style="height: 40px!important"/>
+        <search id="header-search" class="right-menu-item" style="height: 40px!important" />
 
         <error-log class="errLog-container right-menu-item hover-effect" />
 
@@ -49,24 +49,24 @@
       <!-- <div v-if="isLogin" class="header-search right-menu-item">
         <img src="../../assets/img/bell.png" style="width:26px; height:45px; padding-top:23px;">
       </div> -->
-        <el-dropdown v-if="isLogin" class="right-menu-item hover-effect" trigger="click">
+      <el-dropdown v-if="isLogin" class="right-menu-item hover-effect" trigger="click">
         <div class="avatar-wrapper">
           <notification-bell
-          style="line-height:1.5 !important"
-          :size="25"
-          :count="getRemains()"
-          upper-limit="50"
-          counter-location="upperRight"
-          counter-style="roundRectangle"
-          counter-background-color="#FF0000"
-          counter-text-color="#FFFFFF"
-          icon-color="#ffffff"
-        />
+            style="line-height:1.5 !important"
+            :size="25"
+            :count="getRemains()"
+            upper-limit="50"
+            counter-location="upperRight"
+            counter-style="roundRectangle"
+            counter-background-color="#FF0000"
+            counter-text-color="#FFFFFF"
+            icon-color="#ffffff"
+          />
         </div>
         <el-dropdown-menu slot="dropdown">
           <li
-              v-for="(alert, index) in alerts"
-              :key="index"
+            v-for="(alert, index) in alerts"
+            :key="index"
           >
             <span style="padding-left: 10px; padding-right: 10px">{{ alert.text }}</span>
           </li>
@@ -79,16 +79,16 @@
         <div class="avatar-wrapper">
           <!-- <img :src="avatar+'?imageView2/1/w/80/h/80'" class="user-avatar"> -->
           <img src="../../assets/img/account-icon-navbar.png" class="user-avatar" style="height:41px; width:30px; padding-top:18px">
-          <i v-if="isLogin" class="el-icon-caret-bottom" />
+          <i class="el-icon-caret-bottom" />
         </div>
         <el-dropdown-menu slot="dropdown">
-          <router-link v-if="!isLogin" to="/register">
+          <!-- <router-link v-if="!isLogin" to="/register">
             <el-dropdown-item>Register</el-dropdown-item>
           </router-link>
           <router-link v-if="!isLogin" to="/login">
             <el-dropdown-item>Log In</el-dropdown-item>
-          </router-link>
-          <el-dropdown-item v-if="isLogin">
+          </router-link> -->
+          <el-dropdown-item>
             <span style="display:block;" @click="logout">Log Out</span>
           </el-dropdown-item>
         </el-dropdown-menu>
@@ -110,7 +110,7 @@ import Search from '@/components/HeaderSearch'
 // import { getToken } from '@/utils/auth'
 import NotificationBell from 'vue-notification-bell'
 
-import NotificationDropdown from './dropdown/NotificationDropdown'
+// import NotificationDropdown from './dropdown/NotificationDropdown'
 
 export default {
   components: {
@@ -120,12 +120,12 @@ export default {
     // Screenfull,
     // SizeSelect,
     Search,
-    NotificationBell,
-    NotificationDropdown
+    NotificationBell
+    // NotificationDropdown
   },
   data() {
     return {
-      isLogin: localStorage.getItem('token') === 'ImLogin',
+      // isLogin: localStorage.getItem('token') === 'ImLogin',
       model: {},
       items: [
         {
@@ -138,7 +138,7 @@ export default {
         }
       ],
       itemIndex: 0,
-      alerts : [
+      alerts: [
         {
           text: 'alert1'
         },
@@ -153,34 +153,34 @@ export default {
         },
         {
           text: 'alert5'
-        },
+        }
       ],
       count: 0
     }
   },
-  mounted() {
-    isLogin= localStorage.getItem('token') === 'ImLogin'
-	},
+  // mounted() {
+  //   isLogin = localStorage.getItem('token') === 'ImLogin'
+  // },
   computed: {
     ...mapGetters([
       'sidebar',
       'avatar',
       'device',
       ['currentUser', 'isAuthenticated']
-    ]),
+    ])
   },
   methods: {
-    getRemains: function() {  // 算出プロパティのgetter関数と同じ処理
-			var count = 0;
-			var todos = this.alerts;
-			var length = todos.length;
-			for(var i = 0; i < length; i++) {
-				if(!todos[i].done) {
-					count++;
-				}
-			}
-			return count;
-		},
+    getRemains: function() { // 算出プロパティのgetter関数と同じ処理
+      var count = 0
+      var todos = this.alerts
+      var length = todos.length
+      for (var i = 0; i < length; i++) {
+        if (!todos[i].done) {
+          count++
+        }
+      }
+      return count
+    },
     toggleSideBar() {
       this.$store.dispatch('app/toggleSideBar')
     },
@@ -405,7 +405,6 @@ export default {
     .md-toolbar-toggle{
       display: none;
     }
-
 
     .navbar-nav.navbar-right > li > .dropdown-menu:before{
         left: auto;
@@ -671,7 +670,6 @@ export default {
         z-index: 9999;
         overflow-x: hidden;
 
-
         &.visible{
             opacity: 1;
         }
@@ -697,7 +695,6 @@ export default {
     .bar3 {
       outline: 1px solid transparent;
     }
-
 
     .md-toolbar-toggle{
         .icon-bar:nth-child(2){
@@ -905,8 +902,6 @@ export default {
     display: block !important;
   }
 }
-
-
 
 @media (max-width: 480px), (max-width: 767px){
     .form-group{
