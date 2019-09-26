@@ -42,12 +42,11 @@ export default {
 
 .app-main-active {
   /* 50= navbar  50  */
-  min-height: calc(100vh - 50px);
+  min-height: calc(100vh - 259px);
   margin-left:210px;
   width: calc(100% - 210px);
   position: relative;
   overflow: hidden;
-  margin-top: 118px;
 }
 
 .fixed-header+.app-main {
