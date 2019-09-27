@@ -476,6 +476,6 @@ export default {
 .camdiv {
 	float:left;
 	width: 12.5%;
-	height: 120px
+	height: 100px
 }
 </style>
