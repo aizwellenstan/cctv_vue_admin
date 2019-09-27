@@ -399,7 +399,7 @@ export default {
           bytes[39] = new Uint8Array(data39)
           image[39].src = 'data:image/webP;base64,' + base64ArrayBuffer(bytes[39])
         })
-      ], 2000
+      ], 3000
     )
   }
 }
