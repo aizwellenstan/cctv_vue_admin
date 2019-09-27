@@ -15,7 +15,7 @@
           <div v-for="(cam, index) in current.cams" :key="index" height="700px">
             <div class="camdiv">
               {{ cam.cam }}
-              <img :id="cam.cam" width="100%" height="60px">
+              <img :id="cam.cam" width="100%" height="110px">
             </div>
           </div>
         </section>
