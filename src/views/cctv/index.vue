@@ -793,7 +793,7 @@ export default {
 }
 .camdiv {
 	float:left;
-	width: 10%;
+	width: 12.5%;
 	height: 100px
 }
 </style>
