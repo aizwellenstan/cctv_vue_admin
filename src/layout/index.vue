@@ -18,30 +18,30 @@
 </template>
 
 <script>
-import RightPanel from '@/components/RightPanel'
-import { AppMain, Navbar, Foot, Settings, Sidebar/*, TagsView*/ } from './components'
+// import RightPanel from '@/components/RightPanel'
+import { AppMain, Navbar, Foot, /* Settings,*/ Sidebar/*, TagsView*/ } from './components'
 import ResizeMixin from './mixin/ResizeHandler'
 import { mapState } from 'vuex'
 
 export default {
-  data() {
-    return {
-      isLogin : localStorage.getItem('token') == 'ImLogin',
-    }
-  },
   name: 'Layout',
   components: {
     AppMain,
     Navbar,
     Foot,
-    RightPanel,
-    Settings,
+    // RightPanel,
+    // Settings,
     Sidebar
     // TagsView
   },
   mixins: [ResizeMixin],
+  data() {
+    return {
+      isLogin: localStorage.getItem('token') === 'ImLogin'
+    }
+  },
   mounted: {
-    isLogin : localStorage.getItem('token') == 'ImLogin',
+    isLogin: localStorage.getItem('token') === 'ImLogin'
   },
   computed: {
     ...mapState({
@@ -72,6 +72,8 @@ export default {
 <style lang="scss" scoped>
   @import "~@/styles/mixin.scss";
   @import "~@/styles/variables.scss";
+  html, body { height:100%; }
+  #wrap { min-height:100%; }
 
   .app-wrapper {
     @include clearfix;

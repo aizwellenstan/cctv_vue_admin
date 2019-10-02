@@ -1,11 +1,14 @@
 <template>
-  <section :class="[isLogin ? 'app-main-active': 'app-main']">
-    <transition name="fade-transform" mode="out-in">
-      <keep-alive :include="cachedViews">
-        <router-view :key="key" />
-      </keep-alive>
-    </transition>
-  </section>
+  <div>
+    <div height="500px" />
+    <section :class="[isLogin ? 'app-main-active': 'app-main']">
+      <transition name="fade-transform" mode="out-in">
+        <keep-alive :include="cachedViews">
+          <router-view :key="key" style="padding-top: 4%;padding-bottom: 2.5%" />
+        </keep-alive>
+      </transition>
+    </section>
+  </div>
 </template>
 
 <script>
@@ -41,7 +44,6 @@ export default {
 }
 
 .app-main-active {
-  /* 50= navbar  50  */
   min-height: calc(100vh - 108px);
   margin-left:210px;
   width: calc(100% - 210px);

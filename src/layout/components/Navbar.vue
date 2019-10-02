@@ -1,15 +1,16 @@
 <template>
-  <div :class="[isLogin ? 'navbar-locked': 'navbar']">
-    <!-- <hamburger id="hamburger-container" :is-active="sidebar.opened" class="hamburger-container" @toggleClick="toggleSideBar" /> -->
-    <!-- <breadcrumb id="breadcrumb-container" class="breadcrumb-container" />  -->
-    <!-- <router-link to="/"> -->
-    <router-link v-if="isLogin" to="/admin/myaccount/accountinf">
-      <img src="../../assets/img/img_logo_nadiID_1.png" class="idlogo">
-    </router-link>
-    <router-link v-else to="/">
-      <img src="../../assets/img/img_logo_nadi_1_w.png" class="logo">
-    </router-link>
-    <!-- <div
+  <div>
+    <div :class="[isLogin ? 'navbar-locked': 'navbar']">
+      <!-- <hamburger id="hamburger-container" :is-active="sidebar.opened" class="hamburger-container" @toggleClick="toggleSideBar" /> -->
+      <!-- <breadcrumb id="breadcrumb-container" class="breadcrumb-container" />  -->
+      <!-- <router-link to="/"> -->
+      <router-link v-if="isLogin" to="/admin/myaccount/accountinf">
+        <img src="../../assets/img/img_logo_nadiID_1.png" class="idlogo">
+      </router-link>
+      <router-link v-else to="/">
+        <img src="../../assets/img/img_logo_nadi_1_w.png" class="logo">
+      </router-link>
+      <!-- <div
         :key="index"
         v-for="(item, index) in nav"
         style="display: inline-block; color: white; padding-left:20px"
@@ -21,23 +22,23 @@
       :class="navIndex === index ? 'active' : 'item-cn'"
       >{{ item.title }}</a>
     </div> -->
-    <div style="display: inline-block; color: white; padding-left:20px">
-      <ul v-if="!isLogin">
-        <li
-          v-for="(item, index) in items"
-          :key="index"
-          style="display: inline-block; padding-left: 30px"
-        >
-          <a :href="item.url">{{ item.text }}</a>
+      <div style="display: inline-block; color: white; padding-left:20px">
+        <ul v-if="!isLogin">
+          <li
+            v-for="(item, index) in items"
+            :key="index"
+            style="display: inline-block; padding-left: 30px"
+          >
+            <a :href="item.url">{{ item.text }}</a>
           <!-- <a v-bind:href="item.url">{{ item.text }}</a> -->
-        </li>
-      </ul>
-    </div>
-    <div class="right-menu">
-      <template v-if="device!=='mobile'">
-        <search id="header-search" class="right-menu-item" style="height: 40px!important" />
+          </li>
+        </ul>
+      </div>
+      <div class="right-menu">
+        <template v-if="device!=='mobile'">
+          <search id="header-search" class="right-menu-item" style="height: 40px!important" />
 
-        <error-log class="errLog-container right-menu-item hover-effect" />
+          <error-log class="errLog-container right-menu-item hover-effect" />
 
         <!-- <screenfull id="screenfull" class="right-menu-item hover-effect" /> -->
 
@@ -45,54 +46,55 @@
           <size-select id="size-select" class="right-menu-item hover-effect" />
         </el-tooltip> -->
 
-      </template>
-      <!-- <div v-if="isLogin" class="header-search right-menu-item">
+        </template>
+        <!-- <div v-if="isLogin" class="header-search right-menu-item">
         <img src="../../assets/img/bell.png" style="width:26px; height:45px; padding-top:23px;">
       </div> -->
-      <el-dropdown v-if="isLogin" class="right-menu-item hover-effect" trigger="click">
-        <div class="avatar-wrapper">
-          <notification-bell
-            style="line-height:1.5 !important"
-            :size="25"
-            :count="getRemains()"
-            upper-limit="50"
-            counter-location="upperRight"
-            counter-style="roundRectangle"
-            counter-background-color="#FF0000"
-            counter-text-color="#FFFFFF"
-            icon-color="#ffffff"
-          />
+        <el-dropdown v-if="isLogin" class="right-menu-item hover-effect" trigger="click">
+          <div class="avatar-wrapper">
+            <notification-bell
+              style="line-height:1.5 !important"
+              :size="25"
+              :count="getRemains()"
+              upper-limit="50"
+              counter-location="upperRight"
+              counter-style="roundRectangle"
+              counter-background-color="#FF0000"
+              counter-text-color="#FFFFFF"
+              icon-color="#ffffff"
+            />
+          </div>
+          <el-dropdown-menu slot="dropdown">
+            <li
+              v-for="(alert, index) in alerts"
+              :key="index"
+            >
+              <span style="padding-left: 10px; padding-right: 10px">{{ alert.text }}</span>
+            </li>
+          </el-dropdown-menu>
+        </el-dropdown>
+        <div v-if="isLogin" class="header-search right-menu-item">
+          <img src="../../assets/img/items.png" style="width:26px; height:45px; padding-top:23px;">
         </div>
-        <el-dropdown-menu slot="dropdown">
-          <li
-            v-for="(alert, index) in alerts"
-            :key="index"
-          >
-            <span style="padding-left: 10px; padding-right: 10px">{{ alert.text }}</span>
-          </li>
-        </el-dropdown-menu>
-      </el-dropdown>
-      <div v-if="isLogin" class="header-search right-menu-item">
-        <img src="../../assets/img/items.png" style="width:26px; height:45px; padding-top:23px;">
-      </div>
-      <el-dropdown class="avatar-container right-menu-item hover-effect" trigger="click">
-        <div class="avatar-wrapper">
-          <!-- <img :src="avatar+'?imageView2/1/w/80/h/80'" class="user-avatar"> -->
-          <img src="../../assets/img/account-icon-navbar.png" class="user-avatar" style="height:41px; width:30px; padding-top:18px">
-          <i class="el-icon-caret-bottom" />
-        </div>
-        <el-dropdown-menu slot="dropdown">
-          <!-- <router-link v-if="!isLogin" to="/register">
+        <el-dropdown class="avatar-container right-menu-item hover-effect" trigger="click">
+          <div class="avatar-wrapper">
+            <!-- <img :src="avatar+'?imageView2/1/w/80/h/80'" class="user-avatar"> -->
+            <img src="../../assets/img/account-icon-navbar.png" class="user-avatar" style="height:41px; width:30px; padding-top:18px">
+            <i class="el-icon-caret-bottom" />
+          </div>
+          <el-dropdown-menu slot="dropdown">
+            <!-- <router-link v-if="!isLogin" to="/register">
             <el-dropdown-item>Register</el-dropdown-item>
           </router-link>
           <router-link v-if="!isLogin" to="/login">
             <el-dropdown-item>Log In</el-dropdown-item>
           </router-link> -->
-          <el-dropdown-item>
-            <span style="display:block;" @click="logout">Log Out</span>
-          </el-dropdown-item>
-        </el-dropdown-menu>
-      </el-dropdown>
+            <el-dropdown-item>
+              <span style="display:block;" @click="logout">Log Out</span>
+            </el-dropdown-item>
+          </el-dropdown-menu>
+        </el-dropdown>
+      </div>
     </div>
   </div>
 </template>
@@ -220,14 +222,15 @@ export default {
 }
 
 .navbar {
+    height:6.666666666%;
     background: #131313;
-    position: relative;
+    position: fixed;
     width: 100%;
     clear: both;
     overflow: hidden;
-    padding: 18px 0;
+    padding: 0;
     border-bottom: 1px solid #32d4d7;
-  z-index: 1001;
+    z-index: 1001;
 
   .hamburger-container {
     line-height: 46px;
@@ -550,10 +553,11 @@ export default {
         position: relative;
         overflow-x: hidden;
     }
+
     .navbar .container{
-         left: 0;
-          width: 100%;
-         position: relative;
+      left: 0;
+      width: 100%;
+      position: relative;
     }
     .navbar .navbar-collapse.collapse,
     .navbar .navbar-collapse.collapse.in,
@@ -640,22 +644,11 @@ export default {
         }
     }
 
-    .nav-open .navbar-collapse{
-    }
     .nav-open .navbar .container{
         left: -250px;
     }
     .nav-open .main-panel{
         left: 0;
-    }
-
-    .nav-open .sidebar{
-    }
-
-    .nav-open{
-        .off-canvas-sidebar,
-        .sidebar{
-        }
     }
 
     .close-layer{
@@ -815,10 +808,6 @@ export default {
         overflow-x: hidden;
     }
 
-    .social-line .btn{
-    }
-    .subscribe-line .form-control{
-    }
     .social-line.pull-right{
         float: none;
     }

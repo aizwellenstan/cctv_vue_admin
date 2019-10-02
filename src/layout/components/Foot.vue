@@ -166,7 +166,7 @@ export default {
 }
 
 .footer-locked {
-  height: 151px;
+  height: 13.981481481%;
   overflow: hidden;
   position: relative;
   position: fixed;
