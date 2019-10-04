@@ -3,9 +3,9 @@
     <div height="500px" />
     <section :class="[isLogin ? 'app-main-active': 'app-main']">
       <transition name="fade-transform" mode="out-in">
-        <keep-alive :include="cachedViews">
-          <router-view :key="key" style="padding-top: 4%;padding-bottom: 2.5%" />
-        </keep-alive>
+        <!-- <keep-alive :include="cachedViews"> -->
+        <router-view :key="key" style="padding-top: 4%;padding-bottom: 2.5%" />
+        <!-- </keep-alive> -->
       </transition>
     </section>
   </div>
